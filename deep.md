@@ -106,20 +106,22 @@ builtin_interfaces = { path = "../../../workspace/install/builtin_interfaces/sha
 
 #### Core Functionality
 
-The development process followed an incremental approach, implementing each drone control feature in Rust:
+The development process followed an incremental approach to implement drone control features in Rust:
 
-1. Basic control functionality (arming/disarming)
-2. Vertical movement (takeoff/landing)
-3. Advanced flight maneuvers
-4. Mission execution capabilities
+**Phase 1: Basic Controls**
+- Vehicle arming and disarming
+- Takeoff and landing procedures
+- Safety checks and state monitoring
 
-    Takeoff
+**Phase 2: Navigation**
+- Waypoint navigation in NED frame
+- Position hold capabilities
+- Altitude control
 
-    Land
-
-    Waypoints in the NED frame
-
-    Finally, a figure-8 maneuver (lots of trial and error, but it worked!).
+**Phase 3: Advanced Maneuvers**
+- Custom flight patterns
+- Figure-8 trajectory execution
+- Smooth transition between waypoints
 
 ## Telemetry Logging
 
